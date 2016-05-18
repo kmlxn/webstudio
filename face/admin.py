@@ -37,3 +37,6 @@ class CustomerMessageAdmin(admin.ModelAdmin):
     ]
     readonly_fields = CustomerMessage._meta.get_all_field_names()
     list_display = ('name', 'time_sent')
+
+    def has_add_permission(self, request, obj=None):
+        return False
