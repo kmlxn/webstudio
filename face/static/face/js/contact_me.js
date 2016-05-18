@@ -11,20 +11,23 @@ $(function() {
             var name = $("input#name").val();
             var email = $("input#email").val();
             var phone = $("input#phone").val();
+            var csrfmiddlewaretoken = $("input[name='csrfmiddlewaretoken']").val();
             var message = $("textarea#message").val();
+            var formAction = $form.attr('action');
             var firstName = name; // For Success/Failure Message
             // Check for white space in name for Success/Fail message
             if (firstName.indexOf(' ') >= 0) {
                 firstName = name.split(' ').slice(0, -1).join(' ');
             }
             $.ajax({
-                url: "././mail/contact_me.php",
+                url: formAction,
                 type: "POST",
                 data: {
                     name: name,
                     phone: phone,
                     email: email,
-                    message: message
+                    message: message,
+                    csrfmiddlewaretoken: csrfmiddlewaretoken
                 },
                 cache: false,
                 success: function() {
