@@ -1,4 +1,5 @@
 {% load staticfiles %}
+{% load thumbnail %}
 
 <!DOCTYPE html>
 <html lang="en">
@@ -146,7 +147,8 @@
                                     <i class="fa fa-plus fa-3x"></i>
                                 </div>
                             </div>
-                            <img src="{{ project.picture.url }}" class="img-responsive" alt="">
+                            {% thumbnail project.picture 400x289 crop as project_thumb %}
+                            <img src="{{ project_thumb.url }}" class="img-responsive" alt="">
                         </a>
                         <div class="portfolio-caption">
                             <h4>{{ project.name }}</h4>
@@ -252,7 +254,8 @@
                 {% for member in team_members %}
                     <div class="col-sm-4">
                         <div class="team-member">
-                            <img src="{{ member.picture.url }}" class="img-responsive img-circle" alt="">
+                            {% thumbnail member.picture 255x255 crop as member_thumb %}
+                            <img src="{{ member_thumb.url }}" class="img-responsive img-circle" alt="">
                             <h4>{{ member.name }}</h4>
                             <p class="text-muted">{{ member.role }}</p>
                         </div>
