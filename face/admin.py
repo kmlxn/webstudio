@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, TeamMember, CustomerMessage
+from .models import Project, TeamMember, CustomerMessage, DevelopmentStage
 
 
 @admin.register(Project)
@@ -40,3 +40,15 @@ class CustomerMessageAdmin(admin.ModelAdmin):
 
     def has_add_permission(self, request, obj=None):
         return False
+
+
+@admin.register(DevelopmentStage)
+class DevelopmentStageAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,
+            {'fields':
+                ['name', 'text', 'picture']
+            }
+        )
+    ]
+    list_display = ('name',)
