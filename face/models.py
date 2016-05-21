@@ -25,3 +25,9 @@ class CustomerMessage(models.Model):
     phone = models.CharField(max_length=255)
     message = models.TextField()
     time_sent = models.DateTimeField(auto_now_add=True)
+
+
+class DevelopmentStage(models.Model):
+    name = models.CharField(max_length=255)
+    text = models.TextField()
+    picture = models.ImageField()
