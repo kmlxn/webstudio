@@ -1,3 +1,4 @@
+import datetime
 from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Project, TeamMember, CustomerMessage, DevelopmentStage
@@ -17,4 +18,5 @@ def get_index_page(request):
             'projects': Project.objects.all(),
             'team_members': TeamMember.objects.all(),
             'development_stages': DevelopmentStage.objects.all(),
+            'year': datetime.datetime.now().year
         })

@@ -1,0 +1,181 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2016-05-25 07:11+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n"
+"%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n"
+"%100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: face/templates/face/index.html:63
+msgid "SERVICES_NAV"
+msgstr "Услуги"
+
+#: face/templates/face/index.html:66
+msgid "PORTFOLIO_NAV"
+msgstr "Портфолио"
+
+#: face/templates/face/index.html:69
+msgid "PROCESS_NAV"
+msgstr "Процесс"
+
+#: face/templates/face/index.html:72
+msgid "TEAM_NAV"
+msgstr "Команда"
+
+#: face/templates/face/index.html:75
+msgid "CONTACT_NAV"
+msgstr "Связаться"
+
+#: face/templates/face/index.html:88
+msgid "SUBHEADER_JUMBOTRON"
+msgstr "Добро пожаловать в нашу студию!"
+
+#: face/templates/face/index.html:89
+msgid "HEADER_JUMBOTRON"
+msgstr "Приятно познакомиться"
+
+#: face/templates/face/index.html:90
+msgid "MORE_BUTTON_JUMBOTRON"
+msgstr "Подробнее"
+
+#: face/templates/face/index.html:100
+msgid "SERVICES_HEADER"
+msgstr "Услуги"
+
+#: face/templates/face/index.html:101
+msgid "SERVICES_SUBHEADER"
+msgstr "Ваши идеи - наша реализация."
+
+#: face/templates/face/index.html:110
+msgid "WEBSITES_DEVELOPMENT_HEADER"
+msgstr "Разработка сайтов"
+
+#: face/templates/face/index.html:111
+msgid "WEBSITES_DEVELOPMENT_TEXT"
+msgstr ""
+"Разработка сайтов разного уровня сложности. От сайтов-визиток до "
+"распределенных систем."
+
+#: face/templates/face/index.html:118
+msgid "DESKTOP_APPS_DEVELOPMENT_HEADER"
+msgstr "Разработка приложений для компьютеров"
+
+#: face/templates/face/index.html:119
+msgid "DESKTOP_APPS_DEVELOPMENT_TEXT"
+msgstr "Приложения для автоматизации бизнеса."
+
+#: face/templates/face/index.html:126
+msgid "MOBILE_APPS_DEVELOPMENT_HEADER"
+msgstr "Разработка мобильных приложений"
+
+#: face/templates/face/index.html:127
+msgid "MOBILE_APPS_DEVELOPMENT_TEXT"
+msgstr ""
+"Разработка приложений для мобильных телефонов, планшетов, мобильных часов."
+
+#: face/templates/face/index.html:138
+msgid "PORTFOLIO_HEADER"
+msgstr "Портфолио"
+
+#: face/templates/face/index.html:139
+msgid "PORTFOLIO_SUB_HEADER"
+msgstr "Работы нашей команды"
+
+#: face/templates/face/index.html:169
+msgid "PROCESS_HEADER"
+msgstr "Процесс разработки"
+
+#: face/templates/face/index.html:170
+msgid "PROCESS_SUBHEADER"
+msgstr "Шаги от идеи до реализации"
+
+#: face/templates/face/index.html:194
+msgid "SUCCESS_STAGE"
+msgstr "Успех!"
+
+#: face/templates/face/index.html:208
+msgid "TEAM_HEADER"
+msgstr "Наша команда"
+
+#: face/templates/face/index.html:209
+msgid "TEAM_SUBHEADER"
+msgstr "Люди живущие программным кодом"
+
+#: face/templates/face/index.html:226
+msgid "TEAM_TEXT"
+msgstr "Мы любим программирование &#9825;"
+
+#: face/templates/face/index.html:265
+msgid "CONTACT_HEADER"
+msgstr "Связаться с нами"
+
+#: face/templates/face/index.html:266
+msgid "CONTACT_SUBHEADER"
+msgstr "Отправьте нам сообщение, и мы с вами свяжемся."
+
+#: face/templates/face/index.html:276
+msgid "NAME_PLACEHOLDER"
+msgstr "Ваше имя *"
+
+#: face/templates/face/index.html:277
+msgid "NAME_REQUIRED_ERROR"
+msgstr "Пожалуйста, введите свое имя."
+
+#: face/templates/face/index.html:281
+msgid "EMAIL_PLACEHOLDER"
+msgstr "Ваш адрес электронной почты *"
+
+#: face/templates/face/index.html:282
+msgid "EMAIL_REQUIRED_ERROR"
+msgstr "Пожалуйста, введите свой адрес электронной почты."
+
+#: face/templates/face/index.html:286
+msgid "PHONE_PLACEHOLDER"
+msgstr "Ваш номер телефона *"
+
+#: face/templates/face/index.html:287
+msgid "PHONE_REQUIRED_ERROR"
+msgstr "Пожалуйста, введите свой номер телефона."
+
+#: face/templates/face/index.html:293
+msgid "MESSAGE_PLACEHOLDER"
+msgstr "Ваше сообщение *"
+
+#: face/templates/face/index.html:294
+msgid "MESSAGE_REQUIRED_ERROR"
+msgstr "Пожалуйста, введите свое сообщение."
+
+#: face/templates/face/index.html:301
+msgid "SEND_MESSAGE_BUTTON"
+msgstr "Отправить сообщение"
+
+#: face/templates/face/index.html:314
+#, python-format
+msgid "COPYRIGHT %(year)s"
+msgstr "&copy; KirApps %(year)s"
+
+#: face/templates/face/index.html:362
+msgid "CLOSE_PROJECT_BUTTON"
+msgstr "Закрыть проект"
+
+#: webstudio/settings.py:124
+msgid "English"
+msgstr "English"
+
+#: webstudio/settings.py:125
+msgid "Russian"
+msgstr "Русский"

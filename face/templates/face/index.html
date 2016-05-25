@@ -1,3 +1,4 @@
+{% load i18n %}
 {% load staticfiles %}
 {% load thumbnail %}
 
@@ -59,19 +60,19 @@
                         <a href="#page-top"></a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#services">Services</a>
+                        <a class="page-scroll" href="#services">{% trans 'SERVICES_NAV' %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#portfolio">Portfolio</a>
+                        <a class="page-scroll" href="#portfolio">{% trans 'PORTFOLIO_NAV' %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#process">Process</a>
+                        <a class="page-scroll" href="#process">{% trans 'PROCESS_NAV' %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#team">Team</a>
+                        <a class="page-scroll" href="#team">{% trans 'TEAM_NAV' %}</a>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#contact">Contact</a>
+                        <a class="page-scroll" href="#contact">{% trans 'CONTACT_NAV' %}</a>
                     </li>
                 </ul>
             </div>
@@ -84,9 +85,9 @@
     <header>
         <div class="container">
             <div class="intro-text">
-                <div class="intro-lead-in">Welcome To Our Studio!</div>
-                <div class="intro-heading">It's Nice To Meet You</div>
-                <a href="#services" class="page-scroll btn btn-xl">Tell Me More</a>
+                <div class="intro-lead-in">{% trans 'SUBHEADER_JUMBOTRON' %}</div>
+                <div class="intro-heading">{% trans 'HEADER_JUMBOTRON' %}</div>
+                <a href="#services" class="page-scroll btn btn-xl">{% trans 'MORE_BUTTON_JUMBOTRON' %}</a>
             </div>
         </div>
     </header>
@@ -96,8 +97,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Services</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">{% trans 'SERVICES_HEADER' %}</h2>
+                    <h3 class="section-subheading text-muted">{% trans 'SERVICES_SUBHEADER' %}</h3>
                 </div>
             </div>
             <div class="row text-center">
@@ -106,24 +107,24 @@
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-at fa-stack-1x fa-inverse" aria-hidden="true"></i>
                     </span>
-                    <h4 class="service-heading">Websites Development</h4>
-                    <p class="text-muted">We develop websites. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">{% trans 'WEBSITES_DEVELOPMENT_HEADER' %}</h4>
+                    <p class="text-muted">{% trans 'WEBSITES_DEVELOPMENT_TEXT' %}</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Desktop Apps Development</h4>
-                    <p class="text-muted">We develop desktop apps. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">{% trans 'DESKTOP_APPS_DEVELOPMENT_HEADER' %}</h4>
+                    <p class="text-muted">{% trans 'DESKTOP_APPS_DEVELOPMENT_TEXT' %}</p>
                 </div>
                 <div class="col-md-4">
                     <span class="fa-stack fa-4x">
                         <i class="fa fa-circle fa-stack-2x text-primary"></i>
                         <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
                     </span>
-                    <h4 class="service-heading">Mobile Apps Development</h4>
-                    <p class="text-muted">We develop mobile apps. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+                    <h4 class="service-heading">{% trans 'MOBILE_APPS_DEVELOPMENT_HEADER' %}</h4>
+                    <p class="text-muted">{% trans 'MOBILE_APPS_DEVELOPMENT_TEXT' %}</p>
                 </div>
             </div>
         </div>
@@ -134,8 +135,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Portfolio</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">{% trans 'PORTFOLIO_HEADER' %}</h2>
+                    <h3 class="section-subheading text-muted">{% trans 'PORTFOLIO_SUB_HEADER' %}</h3>
                 </div>
             </div>
             <div class="row">
@@ -165,8 +166,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Process</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">{% trans 'PROCESS_HEADER' %}</h2>
+                    <h3 class="section-subheading text-muted">{% trans 'PROCESS_SUBHEADER' %}</h3>
                 </div>
             </div>
             <div class="row">
@@ -190,7 +191,7 @@
                         {% endfor %}
                         <li>
                             <div class="timeline-image">
-                                <h4><br />Success!</h4>
+                                <h4><br />{% trans 'SUCCESS_STAGE' %}</h4>
                             </div>
                         </li>
                     </ul>
@@ -204,8 +205,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Our Amazing Team</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">{% trans 'TEAM_HEADER' %}</h2>
+                    <h3 class="section-subheading text-muted">{% trans 'TEAM_SUBHEADER' %}</h3>
                 </div>
             </div>
             <div class="row">
@@ -222,7 +223,7 @@
             </div>
             <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
-                    <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
+                    <p class="large text-muted">{% trans 'TEAM_TEXT' %}</p>
                 </div>
             </div>
         </div>
@@ -261,8 +262,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Contact Us</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h2 class="section-heading">{% trans 'CONTACT_HEADER' %}</h2>
+                    <h3 class="section-subheading text-muted">{% trans 'CONTACT_SUBHEADER' %}</h3>
                 </div>
             </div>
             <div class="row">
@@ -272,28 +273,32 @@
                         <div class="row">
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Your Name *" id="name" required data-validation-required-message="Please enter your name.">
+                                    <input type="text" class="form-control" placeholder="{% trans 'NAME_PLACEHOLDER' %}"
+                                        id="name" required data-validation-required-message="{% trans 'NAME_REQUIRED_ERROR' %}">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="email" class="form-control" placeholder="Your Email *" id="email" required data-validation-required-message="Please enter your email address.">
+                                    <input type="email" class="form-control" placeholder="{% trans 'EMAIL_PLACEHOLDER' %}"
+                                        id="email" required data-validation-required-message="{% trans 'EMAIL_REQUIRED_ERROR' %}">
                                     <p class="help-block text-danger"></p>
                                 </div>
                                 <div class="form-group">
-                                    <input type="tel" class="form-control" placeholder="Your Phone *" id="phone" required data-validation-required-message="Please enter your phone number.">
+                                    <input type="tel" class="form-control" placeholder="{% trans 'PHONE_PLACEHOLDER' %}"
+                                        id="phone" required data-validation-required-message="{% trans 'PHONE_REQUIRED_ERROR' %}">
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="col-md-6">
                                 <div class="form-group">
-                                    <textarea class="form-control" placeholder="Your Message *" id="message" required data-validation-required-message="Please enter a message."></textarea>
+                                    <textarea class="form-control" placeholder="{% trans 'MESSAGE_PLACEHOLDER' %}" id="message"
+                                        required data-validation-required-message="{% trans 'MESSAGE_REQUIRED_ERROR' %}"></textarea>
                                     <p class="help-block text-danger"></p>
                                 </div>
                             </div>
                             <div class="clearfix"></div>
                             <div class="col-lg-12 text-center">
                                 <div id="success"></div>
-                                <button type="submit" class="btn btn-xl">Send Message</button>
+                                <button type="submit" class="btn btn-xl">{% trans 'SEND_MESSAGE_BUTTON' %}</button>
                             </div>
                         </div>
                     </form>
@@ -306,7 +311,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; KirApps {% now "Y" %}</span>
+                    <span class="copyright">{% blocktrans with year=year %}COPYRIGHT {{ year }}{% endblocktrans %}</span>
                 </div>
                 <div class="col-md-4">
                     <ul class="list-inline social-buttons">
@@ -354,7 +359,7 @@
                                 <p>
                                     {{ project.description }}
                                 </p>
-                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> Close Project</button>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {% trans 'CLOSE_PROJECT_BUTTON' %}</button>
                             </div>
                         </div>
                     </div>
