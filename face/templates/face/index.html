@@ -74,6 +74,18 @@
                     <li>
                         <a class="page-scroll" href="#contact">{% trans 'CONTACT_NAV' %}</a>
                     </li>
+                    <li class="languages dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Languages <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            {% get_available_languages as languages %}
+                            {% for lang_code, lang_name in languages %}
+                                {% language lang_code %}
+                                    <li {% if lang_code == LANGUAGE_CODE %}class='selected'{% endif %}
+                                    ><a href="{% url 'face:index_page' %}">{{ lang_code|language_name_local }}</a></li>
+                                {% endlanguage %}
+                          {% endfor %}
+                        </ul>
+                    </li>
                 </ul>
             </div>
             <!-- /.navbar-collapse -->
