@@ -172,4 +172,4 @@ msgstr "English"
 
 #: webstudio/settings.py:125
 msgid "Russian"
-msgstr "Русский"
+msgstr "Russian"

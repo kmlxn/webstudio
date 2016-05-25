@@ -174,7 +174,7 @@ msgstr "Закрыть проект"
 
 #: webstudio/settings.py:124
 msgid "English"
-msgstr "English"
+msgstr "Английский"
 
 #: webstudio/settings.py:125
 msgid "Russian"
