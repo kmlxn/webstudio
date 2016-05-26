@@ -12,6 +12,13 @@ body{overflow-x:hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Aria
 li.languages.dropdown a {
     color: white !important;
 }
+li.languages.dropdown a:hover {
+    background-color: unset;
+    color: #fed136 !important;
+}
+li.languages.dropdown li.selected a:hover {
+    color: inherit !important;
+}
 li.languages.dropdown > a {
     color: #fed136 !important;
     background-color: transparent !important;
