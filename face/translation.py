@@ -4,14 +4,14 @@ from .models import Project, TeamMember, DevelopmentStage
 
 @register(Project)
 class ProjectTranslationOptions(TranslationOptions):
-    fields = ('name', 'description',)
+    fields = ('name', 'description', 'snippet')
 
 
 @register(TeamMember)
 class TeamMemberTranslationOptions(TranslationOptions):
-    fields = ('name', 'role',)
+    fields = ('name', 'role')
 
 
 @register(DevelopmentStage)
 class DevelopmentStageTranslationOptions(TranslationOptions):
-    fields = ('name', 'text',)
+    fields = ('name', 'text')

@@ -8,7 +8,7 @@ class ProjectAdmin(TranslationAdmin):
     fieldsets = [
         (None,
             {'fields':
-                ['name', 'picture', 'description']
+                ['name', 'picture', 'description', 'snippet']
             }
         )
     ]
