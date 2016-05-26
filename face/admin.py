@@ -1,9 +1,10 @@
 from django.contrib import admin
 from .models import Project, TeamMember, CustomerMessage, DevelopmentStage
+from modeltranslation.admin import TranslationAdmin
 
 
 @admin.register(Project)
-class ProjectAdmin(admin.ModelAdmin):
+class ProjectAdmin(TranslationAdmin):
     fieldsets = [
         (None,
             {'fields':
@@ -15,7 +16,7 @@ class ProjectAdmin(admin.ModelAdmin):
 
 
 @admin.register(TeamMember)
-class TeamMemberAdmin(admin.ModelAdmin):
+class TeamMemberAdmin(TranslationAdmin):
     fieldsets = [
         (None,
             {'fields':
@@ -43,7 +44,7 @@ class CustomerMessageAdmin(admin.ModelAdmin):
 
 
 @admin.register(DevelopmentStage)
-class DevelopmentStageAdmin(admin.ModelAdmin):
+class DevelopmentStageAdmin(TranslationAdmin):
     fieldsets = [
         (None,
             {'fields':
