@@ -55,7 +55,7 @@ msgstr "Services"
 
 #: face/templates/face/index.html:101
 msgid "SERVICES_SUBHEADER"
-msgstr "Your ideas - our implementation."
+msgstr "Your ideas - our implementation"
 
 #: face/templates/face/index.html:110
 msgid "WEBSITES_DEVELOPMENT_HEADER"
@@ -87,7 +87,7 @@ msgstr "Portfolio"
 
 #: face/templates/face/index.html:139
 msgid "PORTFOLIO_SUB_HEADER"
-msgstr "Our team works"
+msgstr "Works of our team"
 
 #: face/templates/face/index.html:169
 msgid "PROCESS_HEADER"
@@ -95,7 +95,7 @@ msgstr "Process"
 
 #: face/templates/face/index.html:170
 msgid "PROCESS_SUBHEADER"
-msgstr "Stept from idea to implementation"
+msgstr "Steps from idea to implementation"
 
 #: face/templates/face/index.html:194
 msgid "SUCCESS_STAGE"
@@ -107,7 +107,7 @@ msgstr "Our Amazing Team"
 
 #: face/templates/face/index.html:209
 msgid "TEAM_SUBHEADER"
-msgstr "People that live inside program code."
+msgstr "People that live inside program code"
 
 #: face/templates/face/index.html:226
 msgid "TEAM_TEXT"
@@ -119,7 +119,7 @@ msgstr "Contact Us"
 
 #: face/templates/face/index.html:266
 msgid "CONTACT_SUBHEADER"
-msgstr "Leave a message and we will contact you."
+msgstr "Leave a message and we will contact you"
 
 #: face/templates/face/index.html:276
 msgid "NAME_PLACEHOLDER"

@@ -58,7 +58,7 @@ msgstr "Услуги"
 
 #: face/templates/face/index.html:101
 msgid "SERVICES_SUBHEADER"
-msgstr "Ваши идеи - наша реализация."
+msgstr "Ваши идеи - наша реализация"
 
 #: face/templates/face/index.html:110
 msgid "WEBSITES_DEVELOPMENT_HEADER"
@@ -125,7 +125,7 @@ msgstr "Связаться с нами"
 
 #: face/templates/face/index.html:266
 msgid "CONTACT_SUBHEADER"
-msgstr "Отправьте нам сообщение, и мы с вами свяжемся."
+msgstr "Отправьте нам сообщение, и мы с вами свяжемся"
 
 #: face/templates/face/index.html:276
 msgid "NAME_PLACEHOLDER"
