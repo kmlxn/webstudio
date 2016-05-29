@@ -19,4 +19,4 @@ class DevelopmentStageTranslationOptions(TranslationOptions):
 
 @register(Service)
 class ServiceTranslationOptions(TranslationOptions):
-    fields = ('name', 'desctiption', 'snippet')
+    fields = ('name', 'description', 'snippet')

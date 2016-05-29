@@ -36,6 +36,6 @@ class DevelopmentStage(models.Model):
 
 class Service(models.Model):
     name = models.CharField(max_length=255)
-    desctiption = models.TextField()
+    description = models.TextField()
     snippet = models.TextField()
     html_tag_for_picture = models.TextField()
