@@ -93,7 +93,8 @@
     </nav>
 
     <!-- Header -->
-    <header>
+    <header id="3d-cube-parent-container">
+        <div class="cube-3d" id="3d-cube-container"></div>
         <div class="container">
             <div class="intro-text">
                 <div class="intro-lead-in">{% trans 'SUBHEADER_JUMBOTRON' %}</div>
@@ -377,6 +378,14 @@
     <!-- Contact Form JavaScript -->
     <script src="{% static 'face/js/jqBootstrapValidation.js' %}"></script>
     <script src="{% static 'face/js/contact_me.js' %}"></script>
+
+    <!-- 3D Cube -->
+    <script src="{% static 'face/js/threejs/three.min.js' %}"></script>
+    <script src="{% static 'face/js/threejs/Projector.js' %}"></script>
+    <script src="{% static 'face/js/threejs/CanvasRenderer.js' %}"></script>
+    <script src="{% static 'face/js/threejs/hilbert3D.js' %}"></script>
+    <script src="{% static 'face/js/threejs/Detector.js' %}"></script>
+    <script src="{% static 'face/js/3d_cube.js' %}"></script>
 
     <!-- Custom Theme JavaScript -->
     <script src="{% static 'face/js/agency.js' %}"></script>
