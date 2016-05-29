@@ -113,30 +113,13 @@
                 </div>
             </div>
             <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-at fa-stack-1x fa-inverse" aria-hidden="true"></i>
-                    </span>
-                    <h4 class="service-heading">{% trans 'WEBSITES_DEVELOPMENT_HEADER' %}</h4>
-                    <p class="text-muted">{% trans 'WEBSITES_DEVELOPMENT_TEXT' %}</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-desktop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">{% trans 'DESKTOP_APPS_DEVELOPMENT_HEADER' %}</h4>
-                    <p class="text-muted">{% trans 'DESKTOP_APPS_DEVELOPMENT_TEXT' %}</p>
-                </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-mobile fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">{% trans 'MOBILE_APPS_DEVELOPMENT_HEADER' %}</h4>
-                    <p class="text-muted">{% trans 'MOBILE_APPS_DEVELOPMENT_TEXT' %}</p>
-                </div>
+                {% for service in services %}
+                    <div class="col-md-4">
+                        {{ service.html_tag_for_picture|safe }}
+                        <h4 class="service-heading">{{ service.name }}</h4>
+                        <p class="text-muted">{{ service.snippet }}</p>
+                    </div>
+                {% endfor %}
             </div>
         </div>
     </section>
