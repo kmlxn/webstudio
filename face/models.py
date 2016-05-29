@@ -27,11 +27,17 @@ class CustomerMessage(models.Model):
     message = models.TextField()
     time_sent = models.DateTimeField(auto_now_add=True)
 
+    def __str__(self):
+        return self.name
+
 
 class DevelopmentStage(models.Model):
     name = models.CharField(max_length=255)
     text = models.TextField()
     picture = models.ImageField()
+
+    def __str__(self):
+        return self.name
 
 
 class Service(models.Model):
@@ -39,3 +45,6 @@ class Service(models.Model):
     description = models.TextField()
     snippet = models.TextField()
     html_tag_for_picture = models.TextField()
+
+    def __str__(self):
+        return self.name
