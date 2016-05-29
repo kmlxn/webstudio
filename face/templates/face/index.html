@@ -115,8 +115,10 @@
             <div class="row text-center">
                 {% for service in services %}
                     <div class="col-md-4">
-                        {{ service.html_tag_for_picture|safe }}
-                        <h4 class="service-heading">{{ service.name }}</h4>
+                        <a href="#service_modal_{{ service.pk }}" class="portfolio-link" data-toggle="modal">
+                            {{ service.html_tag_for_picture|safe }}
+                            <h4 class="service-heading">{{ service.name }}</h4>
+                        </a>
                         <p class="text-muted">{{ service.snippet }}</p>
                     </div>
                 {% endfor %}
@@ -308,6 +310,34 @@
                                     {{ project.description }}
                                 </p>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {% trans 'CLOSE_PROJECT_BUTTON' %}</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    {% endfor %}
+
+    {% for service in services %}
+        <div class="portfolio-modal modal fade" id="service_modal_{{ service.pk }}" tabindex="-1" role="dialog" aria-hidden="true">
+            <div class="modal-content">
+                <div class="close-modal" data-dismiss="modal">
+                    <div class="lr">
+                        <div class="rl">
+                        </div>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8 col-lg-offset-2">
+                            <div class="modal-body">
+                                <!-- Project Details Go Here -->
+                                <h2>{{ service.name }}</h2>
+                                <p class="item-intro text-muted">{{ service.snippet }}</p>
+                                <p>
+                                    {{ service.description }}
+                                </p>
+                                <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {% trans 'CLOSE_SERVICE_BUTTON' %}</button>
                             </div>
                         </div>
                     </div>
