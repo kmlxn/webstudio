@@ -337,6 +337,23 @@
                                 <p>
                                     {{ service.description }}
                                 </p>
+                                <h3>{% trans 'SERVICE_TECHNOLOGIES_HEADER' %}</h3>
+                                <div class="row text-center">
+                                    <div class="col-md-4">
+                                        <h6>{% trans 'SERVICE_PROGRAMMING_LANGUAGES_HEADER' %}</h6>
+                                        {{ service.programming_languages }}
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>{% trans 'SERVICE_PROGRAMMING_FRAMEWORKS_HEADER' %}</h6>
+                                        {{ service.programming_frameworks }}
+                                    </div>
+                                    <div class="col-md-4">
+                                        <h6>{% trans 'SERVICE_PROGRAMMING_TOOLS_HEADER' %}</h6>
+                                        {{ service.programming_tools }}
+                                    </div>
+                                </div>
+                                <br>
+                                <br>
                                 <button type="button" class="btn btn-primary" data-dismiss="modal"><i class="fa fa-times"></i> {% trans 'CLOSE_SERVICE_BUTTON' %}</button>
                             </div>
                         </div>

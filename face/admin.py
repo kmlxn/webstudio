@@ -60,7 +60,8 @@ class ServiceAdmin(TranslationAdmin):
     fieldsets = [
         (None,
             {'fields':
-                ['name', 'description', 'snippet', 'html_tag_for_picture']
+                ['name', 'description', 'snippet', 'html_tag_for_picture',
+                    'programming_languages', 'programming_frameworks', 'programming_tools']
             }
         )
     ]

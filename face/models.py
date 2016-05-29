@@ -45,6 +45,9 @@ class Service(models.Model):
     description = models.TextField()
     snippet = models.TextField()
     html_tag_for_picture = models.TextField()
+    programming_languages = models.TextField()
+    programming_frameworks = models.TextField()
+    programming_tools = models.TextField()
 
     def __str__(self):
         return self.name

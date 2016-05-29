@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-29 09:48+0000\n"
+"POT-Creation-Date: 2016-05-29 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -158,6 +158,22 @@ msgid "CLOSE_PROJECT_BUTTON"
 msgstr "Закрыть проект"
 
 #: face/templates/face/index.html:340
+msgid "SERVICE_TECHNOLOGIES_HEADER"
+msgstr "Наши технологии"
+
+#: face/templates/face/index.html:343
+msgid "SERVICE_PROGRAMMING_LANGUAGES_HEADER"
+msgstr "Языки программирования"
+
+#: face/templates/face/index.html:347
+msgid "SERVICE_PROGRAMMING_FRAMEWORKS_HEADER"
+msgstr "Фреймворки"
+
+#: face/templates/face/index.html:351
+msgid "SERVICE_PROGRAMMING_TOOLS_HEADER"
+msgstr "Инструменты"
+
+#: face/templates/face/index.html:357
 msgid "CLOSE_SERVICE_BUTTON"
 msgstr "Закрыть услугу"
 
@@ -168,24 +184,3 @@ msgstr "Английский"
 #: webstudio/settings.py:125
 msgid "Russian"
 msgstr "Русский"
-
-#~ msgid "WEBSITES_DEVELOPMENT_HEADER"
-#~ msgstr "Разработка сайтов"
-
-#~ msgid "WEBSITES_DEVELOPMENT_TEXT"
-#~ msgstr ""
-#~ "Разработка сайтов разного уровня сложности. От сайтов-визиток до "
-#~ "распределенных систем."
-
-#~ msgid "DESKTOP_APPS_DEVELOPMENT_HEADER"
-#~ msgstr "Разработка приложений для компьютеров"
-
-#~ msgid "DESKTOP_APPS_DEVELOPMENT_TEXT"
-#~ msgstr "Приложения для автоматизации бизнеса."
-
-#~ msgid "MOBILE_APPS_DEVELOPMENT_HEADER"
-#~ msgstr "Разработка мобильных приложений"
-
-#~ msgid "MOBILE_APPS_DEVELOPMENT_TEXT"
-#~ msgstr ""
-#~ "Разработка приложений для мобильных телефонов, планшетов, мобильных часов."

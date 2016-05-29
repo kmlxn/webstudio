@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-29 09:48+0000\n"
+"POT-Creation-Date: 2016-05-29 10:50+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -155,6 +155,22 @@ msgid "CLOSE_PROJECT_BUTTON"
 msgstr "Close project"
 
 #: face/templates/face/index.html:340
+msgid "SERVICE_TECHNOLOGIES_HEADER"
+msgstr "Our technologies"
+
+#: face/templates/face/index.html:343
+msgid "SERVICE_PROGRAMMING_LANGUAGES_HEADER"
+msgstr "Programming languages"
+
+#: face/templates/face/index.html:347
+msgid "SERVICE_PROGRAMMING_FRAMEWORKS_HEADER"
+msgstr "Frameworks"
+
+#: face/templates/face/index.html:351
+msgid "SERVICE_PROGRAMMING_TOOLS_HEADER"
+msgstr "Tools"
+
+#: face/templates/face/index.html:357
 msgid "CLOSE_SERVICE_BUTTON"
 msgstr "Close service"
 
@@ -165,21 +181,3 @@ msgstr "English"
 #: webstudio/settings.py:125
 msgid "Russian"
 msgstr "Russian"
-
-#~ msgid "WEBSITES_DEVELOPMENT_HEADER"
-#~ msgstr "Websites Development"
-
-#~ msgid "WEBSITES_DEVELOPMENT_TEXT"
-#~ msgstr "From online shops to distributed systems."
-
-#~ msgid "DESKTOP_APPS_DEVELOPMENT_HEADER"
-#~ msgstr "Desktop Apps Development"
-
-#~ msgid "DESKTOP_APPS_DEVELOPMENT_TEXT"
-#~ msgstr "Applications for businesses automation."
-
-#~ msgid "MOBILE_APPS_DEVELOPMENT_HEADER"
-#~ msgstr "Mobile Apps Development"
-
-#~ msgid "MOBILE_APPS_DEVELOPMENT_TEXT"
-#~ msgstr "Apps development for mobile phones, tablets, smart watches."
