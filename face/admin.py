@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Project, TeamMember, CustomerMessage, DevelopmentStage
+from .models import Project, TeamMember, CustomerMessage, DevelopmentStage, Service
 from modeltranslation.admin import TranslationAdmin
 
 
@@ -49,6 +49,18 @@ class DevelopmentStageAdmin(TranslationAdmin):
         (None,
             {'fields':
                 ['name', 'text', 'picture']
+            }
+        )
+    ]
+    list_display = ('name',)
+
+
+@admin.register(Service)
+class ServiceAdmin(TranslationAdmin):
+    fieldsets = [
+        (None,
+            {'fields':
+                ['name', 'desctiption', 'snippet', 'html_tag_for_picture']
             }
         )
     ]

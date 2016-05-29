@@ -1,5 +1,5 @@
 from modeltranslation.translator import register, TranslationOptions
-from .models import Project, TeamMember, DevelopmentStage
+from .models import Project, TeamMember, DevelopmentStage, Service
 
 
 @register(Project)
@@ -15,3 +15,8 @@ class TeamMemberTranslationOptions(TranslationOptions):
 @register(DevelopmentStage)
 class DevelopmentStageTranslationOptions(TranslationOptions):
     fields = ('name', 'text')
+
+
+@register(Service)
+class ServiceTranslationOptions(TranslationOptions):
+    fields = ('name', 'desctiption', 'snippet')
