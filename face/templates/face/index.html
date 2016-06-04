@@ -340,17 +340,32 @@
                                 </p>
                                 <h3>{% trans 'SERVICE_TECHNOLOGIES_HEADER' %}</h3>
                                 <div class="row text-center">
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 technologies">
                                         <h6>{% trans 'SERVICE_PROGRAMMING_LANGUAGES_HEADER' %}</h6>
-                                        {{ service.programming_languages }}
+                                        {% for lang in service.programming_languages.all %}
+                                            <p>
+                                                <img src="{{ lang.image.url }}" alt="">
+                                                {{ lang.name }}
+                                            </p>
+                                        {% endfor %}
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 technologies">
                                         <h6>{% trans 'SERVICE_PROGRAMMING_FRAMEWORKS_HEADER' %}</h6>
-                                        {{ service.programming_frameworks }}
+                                        {% for framework in service.programming_frameworks.all %}
+                                            <p>
+                                                <img src="{{ framework.image.url }}" alt="">
+                                                {{ framework.name }}
+                                            </p>
+                                        {% endfor %}
                                     </div>
-                                    <div class="col-md-4">
+                                    <div class="col-md-4 technologies">
                                         <h6>{% trans 'SERVICE_PROGRAMMING_TOOLS_HEADER' %}</h6>
-                                        {{ service.programming_tools }}
+                                        {% for tool in service.programming_tools.all %}
+                                            <p>
+                                                <img src="{{ tool.image.url }}" alt="">
+                                                {{ tool.name }}
+                                            </p>
+                                        {% endfor %}
                                     </div>
                                 </div>
                                 <br>
