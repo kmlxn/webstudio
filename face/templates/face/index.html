@@ -344,7 +344,8 @@
                                         <h6>{% trans 'SERVICE_PROGRAMMING_LANGUAGES_HEADER' %}</h6>
                                         {% for lang in service.programming_languages.all %}
                                             <p>
-                                                <img src="{{ lang.image.url }}" alt="">
+                                                {% thumbnail lang.image 0x30 autocrop as thumb %}
+                                                <img src="{{ thumb.url }}" alt="">
                                                 {{ lang.name }}
                                             </p>
                                         {% endfor %}
@@ -353,7 +354,8 @@
                                         <h6>{% trans 'SERVICE_PROGRAMMING_FRAMEWORKS_HEADER' %}</h6>
                                         {% for framework in service.programming_frameworks.all %}
                                             <p>
-                                                <img src="{{ framework.image.url }}" alt="">
+                                                {% thumbnail framework.image 0x30 autocrop as thumb %}
+                                                <img src="{{ thumb.url }}" alt="">
                                                 {{ framework.name }}
                                             </p>
                                         {% endfor %}
@@ -362,7 +364,8 @@
                                         <h6>{% trans 'SERVICE_PROGRAMMING_TOOLS_HEADER' %}</h6>
                                         {% for tool in service.programming_tools.all %}
                                             <p>
-                                                <img src="{{ tool.image.url }}" alt="">
+                                                {% thumbnail tool.image 0x30 autocrop as thumb %}
+                                                <img src="{{ thumb.url }}" alt="">
                                                 {{ tool.name }}
                                             </p>
                                         {% endfor %}
