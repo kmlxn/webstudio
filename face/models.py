@@ -45,9 +45,33 @@ class Service(models.Model):
     description = models.TextField()
     snippet = models.TextField()
     html_tag_for_picture = models.TextField()
-    programming_languages = models.TextField()
-    programming_frameworks = models.TextField()
-    programming_tools = models.TextField()
+
+    def __str__(self):
+        return self.name
+
+
+class ProgrammingLanguage(models.Model):
+    name = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='programming')
+    services = models.ManyToManyField(Service, related_name='programming_languages')
+
+    def __str__(self):
+        return self.name
+
+
+class ProgrammingFramework(models.Model):
+    name = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='programming')
+    services = models.ManyToManyField(Service, related_name='programming_frameworks')
+
+    def __str__(self):
+        return self.name
+
+
+class ProgrammingTool(models.Model):
+    name = models.CharField(max_length=255)
+    image = models.ImageField(upload_to='programming')
+    services = models.ManyToManyField(Service, related_name='programming_tools')
 
     def __str__(self):
         return self.name

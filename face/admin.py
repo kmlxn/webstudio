@@ -1,6 +1,21 @@
 from django.contrib import admin
-from .models import Project, TeamMember, CustomerMessage, DevelopmentStage, Service
+from .models import Project, TeamMember, CustomerMessage, DevelopmentStage, Service, ProgrammingLanguage, ProgrammingFramework, ProgrammingTool
 from modeltranslation.admin import TranslationAdmin
+
+
+class ProgrammingLanguageInLine(admin.TabularInline):
+    model = ProgrammingLanguage.services.through
+    extra = 3
+
+
+class ProgrammingFrameworkInLine(admin.TabularInline):
+    model = ProgrammingFramework.services.through
+    extra = 3
+
+
+class ProgrammingToolInLine(admin.TabularInline):
+    model = ProgrammingTool.services.through
+    extra = 3
 
 
 @admin.register(Project)
@@ -60,9 +75,49 @@ class ServiceAdmin(TranslationAdmin):
     fieldsets = [
         (None,
             {'fields':
-                ['name', 'description', 'snippet', 'html_tag_for_picture',
-                    'programming_languages', 'programming_frameworks', 'programming_tools']
+                ['name', 'description', 'snippet', 'html_tag_for_picture']
             }
         )
     ]
     list_display = ('name',)
+    inlines = [ProgrammingLanguageInLine, ProgrammingFrameworkInLine, ProgrammingToolInLine]
+
+
+
+@admin.register(ProgrammingLanguage)
+class ProgrammingLanguageAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,
+            {'fields':
+                ['name', 'image']
+            }
+        )
+    ]
+    inlines = [ProgrammingLanguageInLine]
+    exclude = ('services',)
+
+
+@admin.register(ProgrammingFramework)
+class ProgrammingFrameworkAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,
+            {'fields':
+                ['name', 'image']
+            }
+        )
+    ]
+    inlines = [ProgrammingFrameworkInLine]
+    exclude = ('services',)
+
+
+@admin.register(ProgrammingTool)
+class ProgrammingToolAdmin(admin.ModelAdmin):
+    fieldsets = [
+        (None,
+            {'fields':
+                ['name', 'image']
+            }
+        )
+    ]
+    inlines = [ProgrammingToolInLine]
+    exclude = ('services',)
