@@ -75,7 +75,7 @@ msgstr "Portfolio"
 
 #: face/templates/face/index.html:135
 msgid "PORTFOLIO_SUB_HEADER"
-msgstr "Works of our team"
+msgstr "Works of our team members"
 
 #: face/templates/face/index.html:165
 msgid "PROCESS_HEADER"
@@ -99,7 +99,8 @@ msgstr "People that live inside program code"
 
 #: face/templates/face/index.html:222
 msgid "TEAM_TEXT"
-msgstr "We love programming &#9825;"
+msgstr "We are newly formed team of software specialists that will help you implement your dream. "
+"We offer agile and simplified approach for building apps with regular communication and without burdensome bureaucracy."
 
 #: face/templates/face/index.html:233
 msgid "CONTACT_HEADER"
