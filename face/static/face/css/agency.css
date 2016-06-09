@@ -9,29 +9,8 @@ body{overflow-x:hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Aria
     }
 }
 
-li.languages.dropdown a {
-    color: white !important;
-}
-li.languages.dropdown a:hover {
-    background-color: unset;
+.choose-language a {
     color: #fed136 !important;
-}
-li.languages.dropdown li.selected a:hover {
-    color: inherit !important;
-}
-li.languages.dropdown > a {
-    color: #fed136 !important;
-    background-color: transparent !important;
-}
-li.languages.dropdown li.selected {
-    background-color: #fed136 !important;
-}
-li.languages.dropdown .dropdown-menu {
-    background-color: rgb(34, 34, 34) !important;
-    margin-top: -11px !important;
-    min-width: unset !important;
-    width: 100% !important;
-    border-radius: 4px !important;
 }
 
 .cube-3d {
