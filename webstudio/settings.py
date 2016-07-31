@@ -148,6 +148,7 @@ EMAIL_HOST_USER = 'name@email.com'
 EMAIL_HOST_PASSWORD = 'password'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
+EMAIL_SEND_TO = ['name2@email.com']
 
 
 try:
