@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-05-29 10:50+0000\n"
+"POT-Creation-Date: 2016-07-31 12:57+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -25,153 +25,163 @@ msgstr "KirApps - websites, desktop apps, mobile apps development"
 msgid "SITE_TITLE"
 msgstr "KirApps - websites, desktop apps, mobile apps development"
 
-#: face/templates/face/index.html:62
+#: face/templates/face/index.html:68
 msgid "SERVICES_NAV"
 msgstr "SERVICES"
 
-#: face/templates/face/index.html:65
+#: face/templates/face/index.html:71
 msgid "PORTFOLIO_NAV"
 msgstr "PORTFOLIO"
 
-#: face/templates/face/index.html:68
+#: face/templates/face/index.html:74
 msgid "PROCESS_NAV"
 msgstr "PROCESS"
 
-#: face/templates/face/index.html:71
+#: face/templates/face/index.html:77
 msgid "TEAM_NAV"
 msgstr "TEAM"
 
-#: face/templates/face/index.html:74
+#: face/templates/face/index.html:80
 msgid "CONTACT_NAV"
 msgstr "CONTACT"
 
-#: face/templates/face/index.html:77
-msgid "LANGUAGES_NAV"
-msgstr "Languages"
-
-#: face/templates/face/index.html:99
+#: face/templates/face/index.html:108
 msgid "SUBHEADER_JUMBOTRON"
 msgstr "Welcome To Our Studio!"
 
-#: face/templates/face/index.html:100
+#: face/templates/face/index.html:109
 msgid "HEADER_JUMBOTRON"
 msgstr "It's Nice To Meet You"
 
-#: face/templates/face/index.html:101
+#: face/templates/face/index.html:110
 msgid "MORE_BUTTON_JUMBOTRON"
 msgstr "TELL ME MORE"
 
-#: face/templates/face/index.html:111
+#: face/templates/face/index.html:120
 msgid "SERVICES_HEADER"
 msgstr "Services"
 
-#: face/templates/face/index.html:112
+#: face/templates/face/index.html:121
 msgid "SERVICES_SUBHEADER"
 msgstr "Your ideas - our implementation"
 
-#: face/templates/face/index.html:134
+#: face/templates/face/index.html:143
 msgid "PORTFOLIO_HEADER"
 msgstr "Portfolio"
 
-#: face/templates/face/index.html:135
+#: face/templates/face/index.html:144
 msgid "PORTFOLIO_SUB_HEADER"
 msgstr "Works of our team members"
 
-#: face/templates/face/index.html:165
+#: face/templates/face/index.html:174
 msgid "PROCESS_HEADER"
 msgstr "Process"
 
-#: face/templates/face/index.html:166
+#: face/templates/face/index.html:175
 msgid "PROCESS_SUBHEADER"
 msgstr "Steps from idea to implementation"
 
-#: face/templates/face/index.html:190
+#: face/templates/face/index.html:199
 msgid "SUCCESS_STAGE"
 msgstr "SUCCESS!"
 
-#: face/templates/face/index.html:204
+#: face/templates/face/index.html:213
 msgid "TEAM_HEADER"
 msgstr "Our Amazing Team"
 
-#: face/templates/face/index.html:205
+#: face/templates/face/index.html:214
 msgid "TEAM_SUBHEADER"
 msgstr "People that live inside program code"
 
-#: face/templates/face/index.html:222
+#: face/templates/face/index.html:231
 msgid "TEAM_TEXT"
-msgstr "We are newly formed team of software specialists that will help you implement your dream. "
-"We offer agile and simplified approach for building apps with regular communication and without burdensome bureaucracy."
+msgstr ""
+"We are newly formed team of software specialists that will help you "
+"implement your dream. We offer agile and simplified approach for building "
+"apps with regular communication and without burdensome bureaucracy."
 
-#: face/templates/face/index.html:233
+#: face/templates/face/index.html:242
 msgid "CONTACT_HEADER"
 msgstr "Contact Us"
 
-#: face/templates/face/index.html:234
+#: face/templates/face/index.html:243
 msgid "CONTACT_SUBHEADER"
 msgstr "Leave a message and we will contact you"
 
-#: face/templates/face/index.html:244
+#: face/templates/face/index.html:253
 msgid "NAME_PLACEHOLDER"
 msgstr "Your name *"
 
-#: face/templates/face/index.html:245
+#: face/templates/face/index.html:254
 msgid "NAME_REQUIRED_ERROR"
 msgstr "Please enter your name."
 
-#: face/templates/face/index.html:249
+#: face/templates/face/index.html:258
 msgid "EMAIL_PLACEHOLDER"
 msgstr "Your email *"
 
-#: face/templates/face/index.html:250
+#: face/templates/face/index.html:259
 msgid "EMAIL_REQUIRED_ERROR"
 msgstr "Please enter your email address."
 
-#: face/templates/face/index.html:254
+#: face/templates/face/index.html:263
 msgid "PHONE_PLACEHOLDER"
 msgstr "Your phone *"
 
-#: face/templates/face/index.html:255
+#: face/templates/face/index.html:264
 msgid "PHONE_REQUIRED_ERROR"
 msgstr "Please enter your phone number."
 
-#: face/templates/face/index.html:261
+#: face/templates/face/index.html:270
 msgid "MESSAGE_PLACEHOLDER"
 msgstr "Your message *"
 
-#: face/templates/face/index.html:262
+#: face/templates/face/index.html:271
 msgid "MESSAGE_REQUIRED_ERROR"
 msgstr "Please enter a message."
 
-#: face/templates/face/index.html:269
+#: face/templates/face/index.html:279
+msgid "MESSAGE_SENDING"
+msgstr "Sending..."
+
+#: face/templates/face/index.html:284
+msgid "MESSAGE_SEND_SUCCESS"
+msgstr "Your message has been sent."
+
+#: face/templates/face/index.html:290
+msgid "MESSAGE_SEND_ERROR"
+msgstr "Failed to send your message."
+
+#: face/templates/face/index.html:293
 msgid "SEND_MESSAGE_BUTTON"
 msgstr "Send message"
 
-#: face/templates/face/index.html:282
+#: face/templates/face/index.html:306
 #, python-format
 msgid "COPYRIGHT %(year)s"
 msgstr "Copyright &copy; KirApps %(year)s"
 
-#: face/templates/face/index.html:312
+#: face/templates/face/index.html:336
 msgid "CLOSE_PROJECT_BUTTON"
 msgstr "Close project"
 
-#: face/templates/face/index.html:340
+#: face/templates/face/index.html:364
 msgid "SERVICE_TECHNOLOGIES_HEADER"
 msgstr "Our technologies"
 
-#: face/templates/face/index.html:343
+#: face/templates/face/index.html:367
 msgid "SERVICE_PROGRAMMING_LANGUAGES_HEADER"
 msgstr "Programming languages"
 
-#: face/templates/face/index.html:347
+#: face/templates/face/index.html:377
 msgid "SERVICE_PROGRAMMING_FRAMEWORKS_HEADER"
 msgstr "Frameworks"
 
-#: face/templates/face/index.html:351
+#: face/templates/face/index.html:387
 msgid "SERVICE_PROGRAMMING_TOOLS_HEADER"
 msgstr "Tools"
 
-#: face/templates/face/index.html:357
+#: face/templates/face/index.html:399
 msgid "CLOSE_SERVICE_BUTTON"
 msgstr "Close service"
 

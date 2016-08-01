@@ -39,3 +39,8 @@ body{overflow-x:hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Aria
 .portfolio-link {
     color: #333 !important;
 }
+
+.message-sending {
+    margin-bottom: 23px;
+    color: white;
+}
