@@ -69,3 +69,6 @@ section#contact .help-block {
 section#contact .statuses {
     min-height: 15px;
 }
+section#contact .statuses > div {
+    margin-top: 17px;
+}
