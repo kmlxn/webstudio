@@ -1,58 +1,81 @@
-$(function() {
+(function() {
+    function handleContactFormSubmit(event) {
+        event.preventDefault();
+        var $form = $(event.target);
+        var $allSendingStatuses = $form.find('#statuses > div');
+        var $messageSendingError = $form.find('#message_send_error');
+        var $messageSendingSuccess = $form.find('#message_send_success');
+        var $messageSendingSpinner = $form.find('#message_sending');
 
-    $("#contactForm input,#contactForm textarea").jqBootstrapValidation({
-        preventSubmit: true,
-        submitError: function($form, event, errors) {
-            // additional error messages or events
-        },
-        submitSuccess: function($form, event) {
-            event.preventDefault(); // prevent default submit behaviour
-            $form.find('#message_send_success').hide();
-            $form.find('#message_send_error').hide();
-            $form.find('#message_sending').show();
-            // get values from FORM
-            var name = $form.find("input#name").val();
-            var email = $form.find("input#email").val();
-            var phone = $form.find("input#phone").val();
-            var csrfmiddlewaretoken = $form.find("input[name='csrfmiddlewaretoken']").val();
-            var message = $form.find("textarea#message").val();
-            var g_recaptcha_response = $form.find("textarea#g-recaptcha-response").val();
-            var formAction = $form.attr('action');
-            $.ajax({
-                url: formAction,
-                type: "POST",
-                data: {
-                    name: name,
-                    phone: phone,
-                    email: email,
-                    message: message,
-                    csrfmiddlewaretoken: csrfmiddlewaretoken,
-                    'g-recaptcha-response': g_recaptcha_response
+        if (!validate($form))
+            return;
 
-                },
-                cache: false,
-                success: function() {
-                    $form.find('#message_sending').hide();
-                    $form.find('#message_send_success').show();
+        displaySendingSpinner();
 
-                    $form.trigger("reset");
-                },
-                error: function() {
-                    $form.find('#message_sending').hide();
-                    $form.find('#message_send_error').show();
+        $.ajax({
+            url: $form.attr('action'),
+            type: 'POST',
+            data: getValues($form),
+            cache: false,
+            success: function() {
+                displaySendingSuccessMessage();
+                $form.trigger('reset');
+            },
+            error: function() {
+                displaySendingErrorMessage();
+                $form.trigger('reset');
+            },
+        });
+    }
 
-                    $form.trigger("reset");
-                },
-            })
-        },
-        filter: function() {
-            return $(this).is(":visible");
-        },
+    function validate($form) {
+        hideAllFieldErrors();
+        var required = ['[name="name"]', '[name="email"]', '[name="message"]', '[name="g-recaptcha-response"]'];
+        var ok = true;
+
+        $.each(required, function(i, input) {
+            var $input = $form.find(input);
+            if ($input.val().trim() === '') {
+                displayRequiredError($input);
+                ok = false;
+            }
+        });
+
+        return ok;
+    }
+
+    function displayRequiredError($input) {
+        $input.closest('#input_and_info').find('#field_error').show();
+    }
+
+    function hideAllFieldErrors() {
+        $('p#field_error').hide();
+    }
+
+    function getValues($form) {
+        var values = {};
+        $.each($form.serializeArray(), function(i, field) {
+            values[field.name] = field.value;
+        });
+        return values;
+    }
+
+    function displaySendingErrorMessage() {
+        $allSendingStatuses.hide();
+        $messageSendingError.show();
+    }
+
+    function displaySendingSuccessMessage() {
+        $allSendingStatuses.hide();
+        $messageSendingSuccess.show();
+    }
+
+    function displaySendingSpinner() {
+        $allSendingStatuses.hide();
+        $messageSendingSpinner.show();
+    }
+
+    $(function() {
+        $('#contactForm').submit(handleContactFormSubmit);
     });
-
-    $("a[data-toggle=\"tab\"]").click(function(e) {
-        e.preventDefault();
-        $(this).tab("show");
-    });
-});
-
+})();

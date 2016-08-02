@@ -40,7 +40,7 @@ body{overflow-x:hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Aria
     color: #333 !important;
 }
 
-.message-sending {
+section#contact .message-sending {
     margin-bottom: 23px;
     color: white;
 }
@@ -48,14 +48,24 @@ section#contact .form-group input, section#contact .form-group textarea {
     padding: 7px;
 }
 section#contact .form-group textarea.form-control {
-    height: 257px;
+    height: 261px;
 }
-.g-recaptcha > div {
+section#contact .g-recaptcha > div {
     margin: auto;
 }
-.g-recaptcha {
-    margin-bottom: 23px;
-}
-.alert {
+section#contact .alert {
     background-color: white;
+}
+section#contact .form-group {
+    margin-bottom: 0;
+    min-height: 62px;
+}
+section#contact .form-group.captcha .help-block{
+    margin-top: -3px;
+}
+section#contact .help-block {
+    margin: 0;
+}
+section#contact .statuses {
+    min-height: 15px;
 }

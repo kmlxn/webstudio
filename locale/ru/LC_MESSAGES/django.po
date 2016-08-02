@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2016-07-31 12:57+0000\n"
+"POT-Creation-Date: 2016-08-02 17:51+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -28,75 +28,75 @@ msgstr "KirApps - разработка сайтов и приложений"
 msgid "SITE_TITLE"
 msgstr "KirApps - разработка сайтов и приложений"
 
-#: face/templates/face/index.html:68
+#: face/templates/face/index.html:67
 msgid "SERVICES_NAV"
 msgstr "Услуги"
 
-#: face/templates/face/index.html:71
+#: face/templates/face/index.html:70
 msgid "PORTFOLIO_NAV"
 msgstr "Портфолио"
 
-#: face/templates/face/index.html:74
+#: face/templates/face/index.html:73
 msgid "PROCESS_NAV"
 msgstr "Процесс"
 
-#: face/templates/face/index.html:77
+#: face/templates/face/index.html:76
 msgid "TEAM_NAV"
 msgstr "Команда"
 
-#: face/templates/face/index.html:80
+#: face/templates/face/index.html:79
 msgid "CONTACT_NAV"
 msgstr "Связаться"
 
-#: face/templates/face/index.html:108
+#: face/templates/face/index.html:107
 msgid "SUBHEADER_JUMBOTRON"
 msgstr "Добро пожаловать в нашу студию!"
 
-#: face/templates/face/index.html:109
+#: face/templates/face/index.html:108
 msgid "HEADER_JUMBOTRON"
 msgstr "Приятно познакомиться"
 
-#: face/templates/face/index.html:110
+#: face/templates/face/index.html:109
 msgid "MORE_BUTTON_JUMBOTRON"
 msgstr "Подробнее"
 
-#: face/templates/face/index.html:120
+#: face/templates/face/index.html:119
 msgid "SERVICES_HEADER"
 msgstr "Услуги"
 
-#: face/templates/face/index.html:121
+#: face/templates/face/index.html:120
 msgid "SERVICES_SUBHEADER"
 msgstr "Ваши идеи - наша реализация"
 
-#: face/templates/face/index.html:143
+#: face/templates/face/index.html:142
 msgid "PORTFOLIO_HEADER"
 msgstr "Портфолио"
 
-#: face/templates/face/index.html:144
+#: face/templates/face/index.html:143
 msgid "PORTFOLIO_SUB_HEADER"
 msgstr "Работы нашей членов нашей команды"
 
-#: face/templates/face/index.html:174
+#: face/templates/face/index.html:173
 msgid "PROCESS_HEADER"
 msgstr "Процесс разработки"
 
-#: face/templates/face/index.html:175
+#: face/templates/face/index.html:174
 msgid "PROCESS_SUBHEADER"
 msgstr "Шаги от идеи до реализации"
 
-#: face/templates/face/index.html:199
+#: face/templates/face/index.html:198
 msgid "SUCCESS_STAGE"
 msgstr "Успех!"
 
-#: face/templates/face/index.html:213
+#: face/templates/face/index.html:212
 msgid "TEAM_HEADER"
 msgstr "Наша команда"
 
-#: face/templates/face/index.html:214
+#: face/templates/face/index.html:213
 msgid "TEAM_SUBHEADER"
 msgstr "Люди живущие программным кодом"
 
-#: face/templates/face/index.html:231
+#: face/templates/face/index.html:230
 msgid "TEAM_TEXT"
 msgstr ""
 "Мы - новая команда специалистов программного обеспечения которая поможет вам "
@@ -104,95 +104,95 @@ msgstr ""
 "клиента подход к разработке программного обеспечения с постоянной "
 "комуникацией и без обременительной бюрократии."
 
-#: face/templates/face/index.html:242
+#: face/templates/face/index.html:241
 msgid "CONTACT_HEADER"
 msgstr "Связаться с нами"
 
-#: face/templates/face/index.html:243
+#: face/templates/face/index.html:242
 msgid "CONTACT_SUBHEADER"
 msgstr "Отправьте нам сообщение, и мы с вами свяжемся"
 
-#: face/templates/face/index.html:253
-msgid "NAME_PLACEHOLDER"
-msgstr "Ваше имя *"
-
-#: face/templates/face/index.html:254
-msgid "NAME_REQUIRED_ERROR"
-msgstr "Пожалуйста, введите свое имя."
-
-#: face/templates/face/index.html:258
-msgid "EMAIL_PLACEHOLDER"
-msgstr "Ваш адрес электронной почты *"
-
-#: face/templates/face/index.html:259
-msgid "EMAIL_REQUIRED_ERROR"
-msgstr "Пожалуйста, введите свой адрес электронной почты."
-
-#: face/templates/face/index.html:263
-msgid "PHONE_PLACEHOLDER"
-msgstr "Ваш номер телефона *"
-
-#: face/templates/face/index.html:264
-msgid "PHONE_REQUIRED_ERROR"
-msgstr "Пожалуйста, введите свой номер телефона."
-
-#: face/templates/face/index.html:270
+#: face/templates/face/index.html:252
 msgid "MESSAGE_PLACEHOLDER"
 msgstr "Ваше сообщение *"
 
-#: face/templates/face/index.html:271
+#: face/templates/face/index.html:255
 msgid "MESSAGE_REQUIRED_ERROR"
 msgstr "Пожалуйста, введите свое сообщение."
 
-#: face/templates/face/index.html:279
+#: face/templates/face/index.html:260
+msgid "NAME_PLACEHOLDER"
+msgstr "Ваше имя *"
+
+#: face/templates/face/index.html:263
+msgid "NAME_REQUIRED_ERROR"
+msgstr "Пожалуйста, введите свое имя."
+
+#: face/templates/face/index.html:266
+msgid "EMAIL_PLACEHOLDER"
+msgstr "Ваш адрес электронной почты *"
+
+#: face/templates/face/index.html:269
+msgid "EMAIL_REQUIRED_ERROR"
+msgstr "Пожалуйста, введите свой адрес электронной почты."
+
+#: face/templates/face/index.html:273
+msgid "PHONE_PLACEHOLDER"
+msgstr "Ваш номер телефона"
+
+#: face/templates/face/index.html:278
+msgid "CAPTCHA_REQUIRED_ERROR"
+msgstr "Пожалуйста, подтвердите что вы не робот."
+
+#: face/templates/face/index.html:284
 msgid "MESSAGE_SENDING"
 msgstr "Сообщение отправляется..."
 
-#: face/templates/face/index.html:284
+#: face/templates/face/index.html:288
 msgid "MESSAGE_SEND_SUCCESS"
 msgstr "Ваше сообщение успешно отправлено."
 
-#: face/templates/face/index.html:290
+#: face/templates/face/index.html:292
 msgid "MESSAGE_SEND_ERROR"
 msgstr "Произошла ошибка при отправке сообщения."
 
-#: face/templates/face/index.html:293
+#: face/templates/face/index.html:296
 msgid "SEND_MESSAGE_BUTTON"
 msgstr "Отправить сообщение"
 
-#: face/templates/face/index.html:306
+#: face/templates/face/index.html:309
 #, python-format
 msgid "COPYRIGHT %(year)s"
 msgstr "&copy; KirApps %(year)s"
 
-#: face/templates/face/index.html:336
+#: face/templates/face/index.html:339
 msgid "CLOSE_PROJECT_BUTTON"
 msgstr "Закрыть проект"
 
-#: face/templates/face/index.html:364
+#: face/templates/face/index.html:367
 msgid "SERVICE_TECHNOLOGIES_HEADER"
 msgstr "Наши технологии"
 
-#: face/templates/face/index.html:367
+#: face/templates/face/index.html:370
 msgid "SERVICE_PROGRAMMING_LANGUAGES_HEADER"
 msgstr "Языки программирования"
 
-#: face/templates/face/index.html:377
+#: face/templates/face/index.html:380
 msgid "SERVICE_PROGRAMMING_FRAMEWORKS_HEADER"
 msgstr "Фреймворки"
 
-#: face/templates/face/index.html:387
+#: face/templates/face/index.html:390
 msgid "SERVICE_PROGRAMMING_TOOLS_HEADER"
 msgstr "Инструменты"
 
-#: face/templates/face/index.html:399
+#: face/templates/face/index.html:402
 msgid "CLOSE_SERVICE_BUTTON"
 msgstr "Закрыть услугу"
 
-#: webstudio/settings.py:124
+#: webstudio/settings.py:125
 msgid "English"
 msgstr "Английский"
 
-#: webstudio/settings.py:125
+#: webstudio/settings.py:126
 msgid "Russian"
 msgstr "Русский"
