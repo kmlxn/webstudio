@@ -2,15 +2,11 @@
     function handleContactFormSubmit(event) {
         event.preventDefault();
         var $form = $(event.target);
-        var $allSendingStatuses = $form.find('#statuses > div');
-        var $messageSendingError = $form.find('#message_send_error');
-        var $messageSendingSuccess = $form.find('#message_send_success');
-        var $messageSendingSpinner = $form.find('#message_sending');
 
         if (!validate($form))
             return;
 
-        displaySendingSpinner();
+        displaySendingSpinner($form);
 
         $.ajax({
             url: $form.attr('action'),
@@ -18,11 +14,11 @@
             data: getValues($form),
             cache: false,
             success: function() {
-                displaySendingSuccessMessage();
+                displaySendingSuccessMessage($form);
                 $form.trigger('reset');
             },
             error: function() {
-                displaySendingErrorMessage();
+                displaySendingErrorMessage($form);
                 $form.trigger('reset');
             },
         });
@@ -60,19 +56,19 @@
         return values;
     }
 
-    function displaySendingErrorMessage() {
-        $allSendingStatuses.hide();
-        $messageSendingError.show();
+    function displaySendingErrorMessage($form) {
+        $form.find('#statuses > div').hide();
+        $form.find('#message_send_error').show();
     }
 
-    function displaySendingSuccessMessage() {
-        $allSendingStatuses.hide();
-        $messageSendingSuccess.show();
+    function displaySendingSuccessMessage($form) {
+        $form.find('#statuses > div').hide();
+        $form.find('#message_send_success').show();
     }
 
-    function displaySendingSpinner() {
-        $allSendingStatuses.hide();
-        $messageSendingSpinner.show();
+    function displaySendingSpinner($form) {
+        $form.find('#statuses > div').hide();
+        $form.find('#message_sending').show();
     }
 
     $(function() {
