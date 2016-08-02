@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'modeltranslation',
     'django.contrib.admin',
     'easy_thumbnails',
+    'captcha',
     'face',
 ]
 
@@ -150,6 +151,9 @@ EMAIL_PORT = 465
 EMAIL_USE_TLS = False
 EMAIL_USE_SSL = True
 EMAIL_SEND_TO = ['name2@email.com']
+
+
+NOCAPTCHA = True
 
 
 try:

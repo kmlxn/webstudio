@@ -44,7 +44,18 @@ body{overflow-x:hidden;font-family:"Roboto Slab","Helvetica Neue",Helvetica,Aria
     margin-bottom: 23px;
     color: white;
 }
-
+section#contact .form-group input, section#contact .form-group textarea {
+    padding: 7px;
+}
+section#contact .form-group textarea.form-control {
+    height: 257px;
+}
+.g-recaptcha > div {
+    margin: auto;
+}
+.g-recaptcha {
+    margin-bottom: 23px;
+}
 .alert {
     background-color: white;
 }

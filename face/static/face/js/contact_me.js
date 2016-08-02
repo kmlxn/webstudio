@@ -7,21 +7,17 @@ $(function() {
         },
         submitSuccess: function($form, event) {
             event.preventDefault(); // prevent default submit behaviour
-            $('#message_send_success').hide();
-            $('#message_send_error').hide();
-            $('#message_sending').show();
+            $form.find('#message_send_success').hide();
+            $form.find('#message_send_error').hide();
+            $form.find('#message_sending').show();
             // get values from FORM
-            var name = $("input#name").val();
-            var email = $("input#email").val();
-            var phone = $("input#phone").val();
-            var csrfmiddlewaretoken = $("input[name='csrfmiddlewaretoken']").val();
-            var message = $("textarea#message").val();
+            var name = $form.find("input#name").val();
+            var email = $form.find("input#email").val();
+            var phone = $form.find("input#phone").val();
+            var csrfmiddlewaretoken = $form.find("input[name='csrfmiddlewaretoken']").val();
+            var message = $form.find("textarea#message").val();
+            var g_recaptcha_response = $form.find("textarea#g-recaptcha-response").val();
             var formAction = $form.attr('action');
-            var firstName = name; // For Success/Failure Message
-            // Check for white space in name for Success/Fail message
-            if (firstName.indexOf(' ') >= 0) {
-                firstName = name.split(' ').slice(0, -1).join(' ');
-            }
             $.ajax({
                 url: formAction,
                 type: "POST",
@@ -30,20 +26,22 @@ $(function() {
                     phone: phone,
                     email: email,
                     message: message,
-                    csrfmiddlewaretoken: csrfmiddlewaretoken
+                    csrfmiddlewaretoken: csrfmiddlewaretoken,
+                    'g-recaptcha-response': g_recaptcha_response
+
                 },
                 cache: false,
                 success: function() {
-                    $('#message_sending').hide();
-                    $('#message_send_success').show();
+                    $form.find('#message_sending').hide();
+                    $form.find('#message_send_success').show();
 
-                    $('#contactForm').trigger("reset");
+                    $form.trigger("reset");
                 },
                 error: function() {
-                    $('#message_sending').hide();
-                    $('#message_send_error').show();
+                    $form.find('#message_sending').hide();
+                    $form.find('#message_send_error').show();
 
-                    $('#contactForm').trigger("reset");
+                    $form.trigger("reset");
                 },
             })
         },
@@ -58,8 +56,3 @@ $(function() {
     });
 });
 
-
-/*When clicking on Full hide fail/success boxes */
-$('#name').focus(function() {
-    $('#success').html('');
-});

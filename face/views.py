@@ -1,13 +1,18 @@
 import datetime
 from django.shortcuts import render
-from django.http import HttpResponse
+from django.http import HttpResponse, HttpResponseBadRequest
 from django.conf import settings
 from django.core.mail import send_mail
 from .models import Project, TeamMember, CustomerMessage, DevelopmentStage, Service
+from .forms import get_captcha_form
 
 
 def get_index_page(request):
+    captcha_form = get_captcha_form(request)
+
     if request.method == 'POST':
+        if not captcha_form.is_valid():
+            return HttpResponseBadRequest('captcha error')
         message = CustomerMessage.objects.create(
             name=request.POST['name'],
             email=request.POST['email'],
@@ -22,8 +27,10 @@ def get_index_page(request):
             'team_members': TeamMember.objects.all(),
             'development_stages': DevelopmentStage.objects.all(),
             'services': Service.objects.all(),
-            'year': datetime.datetime.now().year
+            'year': datetime.datetime.now().year,
+            'captcha_form': captcha_form,
         })
+
 
 def notificate_team_about_new_message(message):
     subject = 'Kirapps - новое сообщение'
